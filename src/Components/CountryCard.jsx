@@ -7,7 +7,7 @@ export const CountryCard = ({countryData}) => {
         <div className="w-[264px] h-[336px] font-Nunito-sans bg-white border border-gray-200 rounded-lg lg:rounded-md shadow dark:text-white dark:bg-gray-800 dark:border-gray-700">
 
               
-                <img src= {countryData.flags.png} alt= {countryData.name.common} className='w-[264px] h-[160px] lg:rounded-t-md hover:cursor-pointer font-Nunito-sans'/>
+            <img src= {countryData.flags.png} alt= {countryData.name.common} className='w-[264px] h-[160px] lg:rounded-t-md hover:cursor-pointer font-Nunito-sans'/>
                            
                                    
             <div className="p-6">
