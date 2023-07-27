@@ -1,11 +1,17 @@
 import React from 'react'
 import { GoSearch } from 'react-icons/go'
 
-export const Search = () => {
+export const Search = ({query, setQuery}) => {
   return (
-    <div className='relative mx-auto'>
-      <GoSearch className='absolute left-6 bottom-4 align-center text-gray-400' />         
-      <input className='placeholder:text-xs placeholder:pl-4 placeholder:font-sans rounded-md shadow-sm bg-[#aefa] pb-1 pr-28 pl-12 w-max h-12 items-center' placeholder="Search for a country..." type="text"/>       
+    <div className='flex relative mx-auto'>
+      <GoSearch className='absolute left-6 bottom-4 align-middle text-gray-400 text-lg dark:text-white' />         
+      <input placeholder="Search for a country..."
+       type="text"
+       value={query} 
+       onChange={(e) =>setQuery(e.target.value)}        
+       className='flex appearance-none border-none placeholder:text-xs dark:bg-[#2B3844] dark:placeholder:text-white
+       placeholder:pl-14 font-Nunito-sans rounded-md shadow-sm bg-[#ffffff] w-[342px] lg:w-[480px] mx-auto h-12 pb-3'/>  
+          
     </div>
   )
 }
