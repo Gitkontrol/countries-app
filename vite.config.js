@@ -13,18 +13,18 @@ export default defineConfig(({ command }) => {
 
       plugins: [react(), tailwindcss("./tailwind.config.js")],
 
-      base: "/",
+      base: "/countries-app/",
 
   };
 
 
 
 
-  if (command !== "serve") {
+  // if (command !== "serve") {
 
-      config.base = "/countries_api_app/";
+  //     config.base = "/countries-app/";
 
-  }
+  // }
 
 
 

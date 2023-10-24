@@ -3,12 +3,13 @@ import { Header } from "./Components/Header";
 import { Search } from "./Components/Search";
 import Filter from "./Components/Filter";
 import { CountryCard } from "./Components/countryCard"; 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner"
 import { MdError } from "react-icons/md"
 import axios from "axios"
-//import { CountryDetails } from "./Components/countryDetails";
+import { CountryDetails } from "./Components/countryDetails";
 //import { Route, Routes } from "react-router-dom";
-//import "./App.css";
+import "./App.css";
 
 
 
@@ -48,7 +49,7 @@ axios.get('https://restcountries.com/v3.1/all')
 .catch(error =>{
   setAnError(true)
   setNowLoading(false)
-  console.log(err)
+  console.log(error)
 })
 }, [])
 
@@ -60,9 +61,10 @@ axios.get('https://restcountries.com/v3.1/all')
         <Header />
       </div>      
        {/* <Routes>
-        <Route exact path="/" element={<CountryCard />} />
-        <Route exact path="/countrycard/countrydetails" element={<countryDetails />} />
-      </Routes>  */}
+        <Route exact path="/countries-app/" element={<CountryCard />} />
+        <Route exact path="/countries-app/countrycard/countrydetails" element={<countryDetails />} />
+      </Routes> 
+       */}
       <div className="lg:flex lg:justify-between lg:px-14 lg:pt-3">
         <div className="mt-6 mb-9 lg:mt-9 lg:ml-4">
           <Search query={query} setQuery={setQuery} />

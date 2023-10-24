@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "esliniit src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "build-css": "tailwindcss build -i ./src/index.css -o countries_api_app/output.css"
   },
