@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner"
 import { MdError } from "react-icons/md"
 import axios from "axios"
-import { CountryDetails } from "./Components/CountryDetails";
+// import { CountryDetails } from "./Components/CountryDetails";
 //import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
