@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { Header } from "./Components/Header";
 import { Search } from "./Components/Search";
 import Filter from "./Components/Filter";
-import { CountryCard } from "./Components/countryCard"; 
+import { CountryCard } from "./Components/CountryCard"; 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner"
 import { MdError } from "react-icons/md"
 import axios from "axios"
-import { CountryDetails } from "./Components/countryDetails";
+import { CountryDetails } from "./Components/CountryDetails";
 //import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
